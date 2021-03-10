@@ -1,0 +1,292 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5886119a5c7b34d8872ab527ca3e1b, type: 3}
+  m_Name: UnityBuildSettings
+  m_EditorClassIdentifier: 
+  _basicSettings:
+    baseBuildFolder: bin
+    buildPath: $YEAR-$MONTH-$DAY/$BUILD/$RELEASE_TYPE/$PLATFORM/$ARCHITECTURE/$DISTRIBUTION
+    openFolderPostBuild: 1
+  _productParameters:
+    buildCounter: 1
+    lastGeneratedVersion: 1.0.2260.281
+    version: 1.0.$DAYSSINCE("January 1, 2015").$SECONDS
+    autoGenerate: 1
+  _releaseTypeList:
+    releaseTypes:
+    - typeName: Production Build
+      bundleIndentifier: 
+      companyName: Tijolo.Gamedev
+      productName: Jumpy Square
+      developmentBuild: 0
+      allowDebugging: 0
+      enableHeadlessMode: 0
+      customDefines: 
+      sceneList:
+        enabledScenes:
+        - fileGUID: 9492fc97b56bba748a1770b12420616c
+        - fileGUID: 59882c483cd59ad42b669119315907df
+        - fileGUID: 9fc0d4010bbf28b4594072e72b8655ab
+    - typeName: Development Build
+      bundleIndentifier: 
+      companyName: Tijolo.Gamedev
+      productName: Jumpy Square
+      developmentBuild: 1
+      allowDebugging: 0
+      enableHeadlessMode: 0
+      customDefines: 
+      sceneList:
+        enabledScenes:
+        - fileGUID: 9492fc97b56bba748a1770b12420616c
+        - fileGUID: 59882c483cd59ad42b669119315907df
+        - fileGUID: 9fc0d4010bbf28b4594072e72b8655ab
+  _platformList:
+    platforms:
+    - enabled: 1
+      distributionList:
+        distributions: []
+      architectures:
+      - target: 5
+        name: Windows x86
+        enabled: 1
+      - target: 19
+        name: Windows x64
+        enabled: 1
+      variants: []
+      platformName: PC
+      binaryNameFormat: '{0}.exe'
+      dataDirNameFormat: '{0}_Data'
+      targetGroup: 1
+    - enabled: 1
+      distributionList:
+        distributions: []
+      architectures:
+      - target: 24
+        name: Linux x64
+        enabled: 1
+      variants: []
+      platformName: Linux
+      binaryNameFormat: '{0}.x86'
+      dataDirNameFormat: '{0}_Data'
+      targetGroup: 1
+    - enabled: 1
+      distributionList:
+        distributions: []
+      architectures:
+      - target: 13
+        name: Android
+        enabled: 1
+      variants:
+      - variantName: Device Type
+        selectedIndex: 0
+        values:
+        - FAT
+        - ARMv7
+        - x86
+      - variantName: Texture Compression
+        selectedIndex: 0
+        values:
+        - ETC
+        - ETC2
+        - ASTC
+        - DXT
+        - PVRTC
+        - ATC
+        - Generic
+      - variantName: Build System
+        selectedIndex: 0
+        values:
+        - Internal
+        - Gradle
+        - ADT (Legacy)
+      platformName: Android
+      binaryNameFormat: '{0}.apk'
+      dataDirNameFormat: '{0}_Data'
+      targetGroup: 7
+    - enabled: 1
+      distributionList:
+        distributions: []
+      architectures:
+      - target: 2
+        name: OSX
+        enabled: 1
+      variants: []
+      platformName: OSX
+      binaryNameFormat: '{0}.app'
+      dataDirNameFormat: '{0}.app/Contents'
+      targetGroup: 1
+    - enabled: 1
+      distributionList:
+        distributions: []
+      architectures:
+      - target: 20
+        name: WebGL
+        enabled: 1
+      variants: []
+      platformName: WebGL
+      binaryNameFormat: '{0}'
+      dataDirNameFormat: '{0}_Data'
+      targetGroup: 13
+  _projectConfigurations:
+    configSet:
+      _Buckets: 14000000010000001700000009000000ffffffff06000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff0a000000ffffffffffffffffffffffff110000001500000008000000130000000f000000ffffffff0b0000000700000012000000ffffffffffffffff16000000ffffffffffffffffffffffff0c000000ffffffffffffffff0400000010000000
+      _HashCodes: 632d3019bf714349895c3172bf15a20ae8b8a8249a118d02e576ab46e5f99d48fc5ba4472569b403253a9f44257fd1043bb251256f9ba06a71c3666f976b8c1e5ee0c90ab00178110d84c474a5230e7c9ef849732565b93a9d05fc0665ec5b7f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      _Next: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff05000000ffffffffffffffffffffffff030000000200000000000000ffffffffffffffff0d000000ffffffffffffffff0e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      _Count: 24
+      _Version: 24
+      _FreeList: -1
+      _FreeCount: 0
+      _Keys:
+      - Production Build/PC/Windows x86
+      - Production Build/PC/Windows x64
+      - Production Build/PC
+      - Production Build/Linux/Linux x64
+      - Production Build/Linux
+      - Production Build/Android/Android (FAT,ETC,Internal)
+      - Production Build/Android
+      - Production Build/OSX/OSX
+      - Production Build/OSX
+      - Production Build/WebGL/WebGL
+      - Production Build/WebGL
+      - Production Build
+      - Development Build/PC/Windows x86
+      - Development Build/PC/Windows x64
+      - Development Build/PC
+      - Development Build/Linux/Linux x64
+      - Development Build/Linux
+      - Development Build/Android/Android (FAT,ETC,Internal)
+      - Development Build/Android
+      - Development Build/OSX/OSX
+      - Development Build/OSX
+      - Development Build/WebGL/WebGL
+      - Development Build/WebGL
+      - Development Build
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      _Values:
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Production Build/PC/Windows x86
+        - Production Build/PC/Windows x64
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Production Build/Linux/Linux x64
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Production Build/Android/Android (FAT,ETC,Internal)
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Production Build/OSX/OSX
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Production Build/WebGL/WebGL
+      - enabled: 1
+        childKeys:
+        - Production Build/PC
+        - Production Build/Linux
+        - Production Build/Android
+        - Production Build/OSX
+        - Production Build/WebGL
+      - enabled: 1
+        childKeys: []
+      - enabled: 0
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Development Build/PC/Windows x86
+        - Development Build/PC/Windows x64
+      - enabled: 0
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Development Build/Linux/Linux x64
+      - enabled: 0
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Development Build/Android/Android (FAT,ETC,Internal)
+      - enabled: 0
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Development Build/OSX/OSX
+      - enabled: 0
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Development Build/WebGL/WebGL
+      - enabled: 1
+        childKeys:
+        - Development Build/PC
+        - Development Build/Linux
+        - Development Build/Android
+        - Development Build/OSX
+        - Development Build/WebGL
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+    showViewOptions: 0
+    showConfigs: 0
+    showBuildInfo: 0
+    hideDisabled: 0
+    treeView: 0
+    selectedKeyChain: Production Build/Linux/Linux x64
+  _preBuildActions:
+    buildActions: []
+  _postBuildActions:
+    buildActions: []
