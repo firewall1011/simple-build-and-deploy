@@ -1,0 +1,3 @@
+[submodule "Assets/unity-build-actions"]
+	path = Assets/unity-build-actions
+	url = https://github.com/Chaser324/unity-build-actions.git

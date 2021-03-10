@@ -128,7 +128,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0.2260.281
+  bundleVersion: 1.0.2260.1700
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -589,7 +589,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
-    1: BUILD_TYPE_DEVELOPMENTBUILD;BUILD_PLATFORM_PC;BUILD_ARCH_WINDOWSX86
+    1: 
     7: 
     13: 
   platformArchitecture: {}
