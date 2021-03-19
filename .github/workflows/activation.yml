@@ -8,10 +8,7 @@ jobs:
     # Request manual activation file
       - name: Request manual activation file
         id: getManualLicenseFile
-        uses: game-ci/unity-activate@v1.3
-        with:
-          # Version of unity to use for building the project.
-          unityVersion: 2019.4.17f1
+        uses: game-ci/unity-request-activation-file@v1.2
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.2
         with:
