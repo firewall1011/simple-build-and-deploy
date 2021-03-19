@@ -48,16 +48,16 @@ MonoBehaviour:
     buildPath: $YEAR-$MONTH-$DAY/$BUILD/$RELEASE_TYPE/$PLATFORM/$ARCHITECTURE/$DISTRIBUTION
     openFolderPostBuild: 1
   _productParameters:
-    buildCounter: 4
-    lastGeneratedVersion: 1.0.2260.1700
+    buildCounter: 6
+    lastGeneratedVersion: 1.0.2269.4308
     version: 1.0.$DAYSSINCE("January 1, 2015").$SECONDS
     autoGenerate: 1
   _releaseTypeList:
     releaseTypes:
     - typeName: Production Build
       bundleIndentifier: 
-      companyName: Tijolo.Gamedev
-      productName: Jumpy Square
+      companyName: TijoloGamedev
+      productName: JumpySquare
       developmentBuild: 0
       allowDebugging: 0
       enableHeadlessMode: 0
@@ -69,8 +69,8 @@ MonoBehaviour:
         - fileGUID: 9fc0d4010bbf28b4594072e72b8655ab
     - typeName: Development Build
       bundleIndentifier: 
-      companyName: Tijolo.Gamedev
-      productName: Jumpy Square
+      companyName: TijoloGamedev
+      productName: JumpySquare
       developmentBuild: 1
       allowDebugging: 0
       enableHeadlessMode: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
       binaryNameFormat: '{0}.apk'
       dataDirNameFormat: '{0}_Data'
       targetGroup: 7
-    - enabled: 1
+    - enabled: 0
       distributionList:
         distributions: []
       architectures:
@@ -169,11 +169,11 @@ MonoBehaviour:
       targetGroup: 13
   _projectConfigurations:
     configSet:
-      _Buckets: 14000000010000001700000009000000ffffffff06000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff0a000000ffffffffffffffffffffffff110000001500000008000000130000000f000000ffffffff0b0000000700000012000000ffffffffffffffff16000000ffffffffffffffffffffffff0c000000ffffffffffffffff0400000010000000
-      _HashCodes: 632d3019bf714349895c3172bf15a20ae8b8a8249a118d02e576ab46e5f99d48fc5ba4472569b403253a9f44257fd1043bb251256f9ba06a71c3666f976b8c1e5ee0c90ab00178110d84c474a5230e7c9ef849732565b93a9d05fc0665ec5b7f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-      _Next: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff05000000ffffffffffffffffffffffff030000000200000000000000ffffffffffffffff0d000000ffffffffffffffff0e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-      _Count: 24
-      _Version: 24
+      _Buckets: 0b000000010000001300000007000000ffffffff06000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff08000000ffffffffffffffffffffffff0f00000011000000ffffffffffffffff0d000000ffffffff09000000ffffffff10000000ffffffffffffffff12000000ffffffffffffffffffffffff0a000000ffffffffffffffff040000000e000000
+      _HashCodes: 632d3019bf714349895c3172bf15a20ae8b8a8249a118d02e576ab462569b403253a9f44257fd1043bb251256f9ba06a71c3666f976b8c1e5ee0c90ab00178110d84c4742565b93a9d05fc0665ec5b7f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      _Next: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff05000000ffffffffffffffffffffffff030000000200000000000000ffffffffffffffffffffffff0c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      _Count: 20
+      _Version: 20
       _FreeList: -1
       _FreeCount: 0
       _Keys:
@@ -184,8 +184,6 @@ MonoBehaviour:
       - Production Build/Linux
       - Production Build/Android/Android (FAT,ETC,Internal)
       - Production Build/Android
-      - Production Build/OSX/OSX
-      - Production Build/OSX
       - Production Build/WebGL/WebGL
       - Production Build/WebGL
       - Production Build
@@ -196,11 +194,13 @@ MonoBehaviour:
       - Development Build/Linux
       - Development Build/Android/Android (FAT,ETC,Internal)
       - Development Build/Android
-      - Development Build/OSX/OSX
-      - Development Build/OSX
       - Development Build/WebGL/WebGL
       - Development Build/WebGL
       - Development Build
+      - 
+      - 
+      - 
+      - 
       - 
       - 
       - 
@@ -237,18 +237,12 @@ MonoBehaviour:
         childKeys: []
       - enabled: 1
         childKeys:
-        - Production Build/OSX/OSX
-      - enabled: 1
-        childKeys: []
-      - enabled: 1
-        childKeys:
         - Production Build/WebGL/WebGL
       - enabled: 1
         childKeys:
         - Production Build/PC
         - Production Build/Linux
         - Production Build/Android
-        - Production Build/OSX
         - Production Build/WebGL
       - enabled: 0
         childKeys: []
@@ -272,19 +266,21 @@ MonoBehaviour:
         childKeys: []
       - enabled: 1
         childKeys:
-        - Development Build/OSX/OSX
-      - enabled: 0
-        childKeys: []
-      - enabled: 1
-        childKeys:
         - Development Build/WebGL/WebGL
       - enabled: 1
         childKeys:
         - Development Build/PC
         - Development Build/Linux
         - Development Build/Android
-        - Development Build/OSX
         - Development Build/WebGL
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
       - enabled: 1
         childKeys: []
       - enabled: 1
@@ -316,13 +312,11 @@ MonoBehaviour:
     showBuildInfo: 0
     hideDisabled: 0
     treeView: 0
-    selectedKeyChain: Production Build/WebGL/WebGL
+    selectedKeyChain: Production Build/Android/Android (FAT,ETC,Internal)
   _preBuildActions:
     buildActions: []
   _postBuildActions:
-    buildActions:
-    - {fileID: -5733774244352815245}
-    - {fileID: 2371494283929922410}
+    buildActions: []
 --- !u!114 &2371494283929922410
 MonoBehaviour:
   m_ObjectHideFlags: 0
