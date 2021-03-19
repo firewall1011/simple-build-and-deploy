@@ -9,8 +9,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        buildPath:
-          - /github/workspace
         targetPlatform:
           - StandaloneWindows64 # Build a Windows 64-bit standalone.
           - StandaloneLinux64 # Build a Linux 64-bit standalone.
@@ -31,8 +29,9 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
-          buildsPath: ../../build/
+          buildsPath: build/
+          buildMethod: UnityEditor.SuperSystems.UnityBuild.BuildCLI.PerformBuild
       - uses: actions/upload-artifact@v2
         with:
           name: Build-${{ matrix.targetPlatform }}
-          path: ${{ matrix.buildPath }}/build/${{ matrix.targetPlatform }}
+          path: build/${{ matrix.targetPlatform }}
